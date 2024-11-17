@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -15,7 +16,118 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.body-container {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+}
+
+.navbar .phone-icon{
+  display: none;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-item {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/* Galler CSS */
+.gallery-grid {
+  display: flex;
+  gap: 8px;
+  height: 450px;
+}
+
+.main-photo {
+  flex: 1;
+  overflow: hidden;
+}
+
+.gallery-grid-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  flex: 1;
+}
+
+/* Property Sections */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.tab.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+/*Booking card */
+.booking-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  border: 1px solid #e0e0e0;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.per-night {
+  color: black;
+  font-size: small;
+  font-weight: 300;
+}
+/*Date select*/
+.date-select {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.date-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 1;
+  margin-right: 10px;
+  text-align: center;
 }
