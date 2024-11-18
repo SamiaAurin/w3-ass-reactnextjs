@@ -8,9 +8,11 @@
   "bedroomCount": "25",
   "bathroomCount": "20",
   "amenities": [
-    "Free Wifi",
-    "Pool",
-    "Spa"
+    "🏊 Pool",
+    "💆🏼 Spa",
+    "🛜 Free WiFi",
+    "💪 Gym",
+    "🌊 Beach Access"
   ],
   "host": "John Doe",
   "address": "123 Waterfall Road, Some City, Country",

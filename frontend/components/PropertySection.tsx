@@ -38,7 +38,7 @@ const PropertySection = ({
               <a href="#" className="tab">Amenities</a>
               <a href="#" className="tab">Policies</a>
       </nav> 
-      <div className="content flex flex-col md:flex-row gap-6">
+      <div className="content">
         {/* Left Column */}
         <div className="left-column w-full md:w-2/3">
           <div className="title-section mb-6">
@@ -113,9 +113,9 @@ const PropertySection = ({
         </div>
 
         {/* Right Column */}
-        <div className="right-column w-full md:w-1/3">
-          <div className="membership bg-gray-100 p-4 rounded-md mb-6">
-            <div className="membership-logo text-3xl text-blue-500">
+        <div className="right-column ">
+          <div className="membership">
+            <div className="membership-logo">
               <i className="fa fa-user-plus"></i>
             </div>
             <div className="membership-text mt-2">

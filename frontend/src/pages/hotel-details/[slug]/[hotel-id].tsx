@@ -1,4 +1,5 @@
 import { GetServerSideProps } from 'next';
+import { useState , useEffect } from 'react';
 import Navbar from '../../../../components/Navbar';
 import Gallery from '../../../../components/Gallery';
 import PropertySection from '../../../../components/PropertySection';
@@ -30,6 +31,13 @@ interface HotelPageProps {
 }
 
 const HotelPage = ({ hotel, error }: HotelPageProps) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
+  if (isLoading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
   if (!hotel) return <p>Hotel not found</p>;
 
@@ -77,6 +85,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   } catch (err) {
     // Instead of passing the entire error object, pass just the error message
     error = (err instanceof Error) ? err.message : 'Failed to fetch hotel data';
+    
   }
 
   return {
