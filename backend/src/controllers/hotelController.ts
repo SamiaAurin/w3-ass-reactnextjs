@@ -169,7 +169,7 @@ export const createHotel = (req: Request, res: Response): any => {
   if (req.files) {
     // Map uploaded image files to URLs
     const imageUrls = (req.files as Express.Multer.File[]).map((file) => {
-      return `${baseUrl}/uploads/${file.filename}`;
+      return `${baseUrl}/uploads/${id}-${file.filename}`;
     });
 
     // Add image URLs to the hotel data

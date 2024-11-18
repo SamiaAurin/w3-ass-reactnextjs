@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 const Home = () => {
   return (
   <div className="body-container">
-       <Navbar/>
+      <Navbar/>
       { /* <!-- gallery starts--> */}
       <div className="gallery-section">
           <div className="gallery-nav">
@@ -47,7 +47,7 @@ const Home = () => {
               </div>
           </div>
       </div>
-      { /* <!-- gallery starts--> */}
+      { /* <!-- gallery ends--> */}
 
       {/*<!-- Properties -->*/}
       <div className="property-section">
@@ -184,7 +184,7 @@ const Home = () => {
           </div>
       </div>
       {/*<!-- Properties ends -->*/}
-    <div className="middle-section">
+      <div className="middle-section">
         
         <div className="rooms-beds">
             <h3>Rooms & beds</h3>
@@ -238,9 +238,9 @@ const Home = () => {
                 <a href="#" className="view-all">See all 34 amenities</a>
             </div>
         </div>
-    </div>
-   { /* Have a Que --> */}
-    <div className="question-box">
+      </div>
+      { /* Have a Que --> */}
+      <div className="question-box">
         <h3>Have a question?</h3>
         <p>Get instant answers with AI powered search of property information and reviews.</p>
         <div className="search-container">
@@ -253,10 +253,10 @@ const Home = () => {
         <div className="beta-label">
             <span>➕Beta</span>
         </div>
-    </div>
+      </div>
 
-    {/*<!-- Rules and Info --> */}
-    <div className="rule-info">
+      {/*<!-- Rules and Info --> */}
+      <div className="rule-info">
         <div className="house-section house-rules">
             <div className="left-col">
                 <h3>House Rules</h3>
@@ -387,9 +387,9 @@ const Home = () => {
                 <a href="#" className="see-more">See more</a>
            </div>
         </div>
-    </div>
-   {/*<!-- Reviews --> */}
-   <div className="review-section">
+      </div>
+      {/*<!-- Reviews --> */}
+      <div className="review-section">
     <div className="review-rating">
         <h1><span>9.8/10</span></h1>
         <h2>Exceptional</h2>
@@ -421,8 +421,8 @@ const Home = () => {
         <a href="#" className="see-all">See all 24 reviews &rarr;</a>
     </div>
 
-   </div>  
-
+      </div>  
+      {/*<!-- Reviews Ends--> */}
       <div className="last-container">
         <div className="last-section">
             <div className="section-title">
